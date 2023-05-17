@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+
+    <!-- nhung thu vien css boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register Member</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" method="post">
+
+                    <div class="form-group">
+                        <label for="">username</label>
+                        <input type="text" class="form-control" name="uid" id="uid" placeholder="input user name" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="">pasword</label>
+                        <input type="password" class="form-control" name="pass" id="pass" placeholder="input password" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="">pasword confirm</label>
+                        <input type="password" class="form-control" name="pass2" id="pass2" placeholder="input password confirm"
+                            required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="">email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="abc@gmail.com" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="">gender </label> <br>
+        
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked> male
+        
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female"> female
+                            </label>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="">languages </label> <br>
+                        <div class="form-check form-check-inline">
+        
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="lanEN" id="lanEN" value="english" checked>
+                                English
+        
+                                <input type="checkbox" class="form-check-input" name="lanFR" id="lanFR" value="french" checked>
+                                French
+        
+                                <input type="checkbox" class="form-check-input" name="lanJP" id="lanJP" value="japanse">
+                                Japanese
+                            </label>
+                        </div>
+                    </div>
+        
+        
+                    <div class="form-group">
+                      <label for="">Location</label>
+                      <select class="form-control" name="location" id="location">
+                        <option>Hue</option>
+                        <option selected>Saigon</option>
+                        <option>Hanoi</option>
+                        <option>Cantho</option>
+                        <option>Danang</option>
+                      </select>
+                    </div>
+        
+                    <div>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <button type="reset" class="btn btn-info">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

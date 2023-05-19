@@ -11,24 +11,32 @@
 </head>
 
 <body>
-<div class="container">
-    <h2>PHP date() function Demo</h2>
-    <hr>
-    <?php 
-       
-        echo "<p>Today is ". date("d/M/Y"). " ,  [date('d/M/Y')] </p>";
-        echo "<p>Today is ". date("d/m/Y"). " ,  [date('d/m/Y')] </p>";
-        echo "<p>Today is ". date("l d/m/Y"). " ,  [date('l d/m/Y')] </p>";
+    <div class="container">
+        <h2>PHP date() function Demo</h2>
+        <hr>
+        <div>
+            <?php
+            if (isset($_COOKIE["user"])) {
+                echo "<b> Welcome Mr/Ms " . $_COOKIE["user"] . "</b>";
+            }
+            ?>
+        </div>
+        <hr>
+        <?php
+
+        echo "<p>Today is " . date("d/M/Y") . " ,  [date('d/M/Y')] </p>";
+        echo "<p>Today is " . date("d/m/Y") . " ,  [date('d/m/Y')] </p>";
+        echo "<p>Today is " . date("l d/m/Y") . " ,  [date('l d/m/Y')] </p>";
         echo "<hr>";
-        echo "<p>Current year is ". date("Y"). " ,  [date('Y')] </p>";
-        echo "<p>Current year is ". date("y"). " ,  [date('y')] </p>";
+        echo "<p>Current year is " . date("Y") . " ,  [date('Y')] </p>";
+        echo "<p>Current year is " . date("y") . " ,  [date('y')] </p>";
 
         echo "<hr>";
         $dob = date_create("14-12-2000");
-        echo "<p> Chuong's birthday : ". date_format($dob,"d-M-Y"). "</p>";
+        echo "<p> Chuong's birthday : " . date_format($dob, "d-M-Y") . "</p>";
 
-    ?>
-</div>
+        ?>
+    </div>
 </body>
 
 </html>

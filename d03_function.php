@@ -77,9 +77,9 @@
         $kq = fn_5($x, $y);
         echo "fn_5($x, $y) = $kq <br>";
 
-        $x = 10.89; $y=45.87;
-        $kq = fn_5($x, $y);
-        echo "fn_5($x, $y) = $kq <br>";
+        // $x = 10.89; $y=45.87;
+        // $kq = fn_5($x, $y);
+        // echo "fn_5($x, $y) = $kq <br>";
 
     ?>
 </div>

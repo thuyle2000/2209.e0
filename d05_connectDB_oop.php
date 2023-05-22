@@ -18,7 +18,7 @@ if($cn->connect_error){
     die ("<p> Loi sai: " . $cn->connect_error);
 }
 else{
-    echo "<h3>Connect to MySQL (OOP) succeeded !</h3>";
+    // echo "<h3>Connect to MySQL (OOP) succeeded !</h3>";
 }
 
 

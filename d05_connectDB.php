@@ -18,7 +18,7 @@ if(mysqli_connect_error()){
     die ("<p> Loi sai: " . mysqli_connect_error());
 }
 else{
-    echo "<h3>Connect to MySQL succeeded !</h3>";
+    // echo "<h3>Connect to MySQL succeeded !</h3>";
 }
 
 

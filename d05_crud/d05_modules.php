@@ -17,6 +17,7 @@ include_once("modules.php");
 <body>
     <div class="container">
         <h2>List of Modules</h2>
+        <a href="d05_modules_insert.php">Add new Module</a>
         <hr>
         <table class="table table-hover table-striped">
             <thead>
@@ -30,9 +31,11 @@ include_once("modules.php");
             </thead>
             <tbody>
                 <?php
-                $modules = new ModuleDAO();
-                $ds = $modules->get();
+                // $modules = new ModuleDAO();
+                // $ds = $modules->get();
                 // var_dump($ds);
+
+                $ds = ModuleDAO::get();
                 foreach ($ds as $row) {
                     echo "<tr>";
                     echo "<td> $row->id </td>";
@@ -42,7 +45,7 @@ include_once("modules.php");
                     echo "<td>
                         <a href='d05_modules_update.php?id=$row->id'>Update</a> 
                         | 
-                        <a href='d05_modules_delete.php?id=$row->id'>Delete</a>
+                        <a href='d05_modules_delete.php?id=$row->id' onclick='return yesno();'>Delete</a>
                     </td>";
                     echo "</tr>";
                 }
@@ -52,5 +55,9 @@ include_once("modules.php");
         </table>
     </div>
 </body>
-
+<script>
+    function yesno(){
+        return confirm("Are u sure ?");
+    }
+</script>
 </html>
